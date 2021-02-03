@@ -3,7 +3,7 @@ import { useState } from "react";
 const GuestList: React.FC = () => {
   const [name, setName] = useState("");
   // const [guests, setGuests] = useState([]); // not working on ts, type: never[], array of "never"
-  const [guests, setGuests] = useState<string[]>([]);
+  const [guests, setGuests] = useState<string[]>([]); // need Generic Type: array of string
 
   const onClick = () => {
     setName("");
