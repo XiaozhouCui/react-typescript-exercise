@@ -7,9 +7,15 @@ interface RepositoriesState {
   data: string[];
 }
 
+const initialState = {
+  loading: false,
+  error: null,
+  data: [],
+};
+
 // To make better use of TypeScript, add returned type "RepositoriesState"
 const reducer = (
-  state: RepositoriesState,
+  state: RepositoriesState = initialState,
   action: Action // add type guard
 ): RepositoriesState => {
   switch (action.type) {
