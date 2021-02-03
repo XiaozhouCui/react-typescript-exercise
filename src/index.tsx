@@ -1,16 +1,18 @@
 import ReactDOM from "react-dom";
-import UserSearch from "./refs/UserSearch";
-// import EventComponent from "./events/EventComponent";
-// import GuestList from "./state/GuestList";
-// import UserSearch from "./state/UserSearch";
-// import UserSearch from "./classes/UserSearch";
+// import EventComponent from "./basics/events/EventComponent";
+// import GuestList from "./basics/state/GuestList";
+// import UserSearch from "./basics/state/UserSearch";
+// import UserSearch from "./basics/classes/UserSearch";
+// import UserSearch from "./basics/refs/UserSearch";
 
 const App = () => {
   return (
     <div>
-      {/* <GuestList /> */}
-      {/* <EventComponent /> */}
-      <UserSearch />
+      {/* <div className="basics">
+        <GuestList />
+        <EventComponent />
+        <UserSearch />
+      </div> */}
     </div>
   );
 };
